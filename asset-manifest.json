@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/toc-toy/static/css/main.f0f15dee.css",
+    "main.js": "/toc-toy/static/js/main.f229b468.js",
+    "static/js/787.7e4f1e07.chunk.js": "/toc-toy/static/js/787.7e4f1e07.chunk.js",
+    "index.html": "/toc-toy/index.html",
+    "main.f0f15dee.css.map": "/toc-toy/static/css/main.f0f15dee.css.map",
+    "main.f229b468.js.map": "/toc-toy/static/js/main.f229b468.js.map",
+    "787.7e4f1e07.chunk.js.map": "/toc-toy/static/js/787.7e4f1e07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0f15dee.css",
+    "static/js/main.f229b468.js"
+  ]
+}
