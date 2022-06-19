@@ -2,16 +2,31 @@ import React from 'react';
 
 const StatusMessage = ({ winner, current }) => {
   const noMovesLeft = current.boare.every(el => el !== null);
-
+const Red = {'color' : 'red'}
   return (
-    
-    <h2 className='app1'>
-      {winner && `Winner is ${winner}`}
+    <div className='status-message'>{winner && (
+      < >
+
+       <span style={Red}></span> Winner is {' '}
+        <span className={winner === 'X' ? 'text-green' : 'text-orange'}>{winner}</span></>)}
+
       {!winner &&
         !noMovesLeft &&
-        `Next player is ${current.isXnext ? 'X' : 'O'}`}
-      {!winner && noMovesLeft && 'X and O tied'}
-    </h2>
+
+        (<>
+          Next palyer is {' '}
+          <span className={current.isXnext ? 'text-green' : 'text-orange'}>
+            {current.isXnext ? 'X' : 'O'}{" "} </span>
+        </>)
+      }
+
+      {!winner && noMovesLeft &&
+        <>
+          <span className='text-green'>X</span>  and
+          <span className='text-green'>O</span>  tied
+        </>}
+
+    </div>
   );
 };
 

@@ -48,12 +48,13 @@ function App() {
   
 
   return (
-    <>
+    <><div className='bg-balls'>
       <h1 className='app'>TIC TAC TOY</h1>
       <StatusMessage winner={winner} current={current} />
       <Buttons handleClick={handleClick}  boare={current.boare} wingSqare={wingSqare}/>
-      <button onClick={newGame}>Start new game</button>
+      <button onClick={newGame}  className = {`btn-reset  ${winner ? 'active' : ''}`}>Start new game</button>
       < History history={history} moveTo={moveTo} currentMove={currentMove} />
+      </div>
     </>
   );
 }

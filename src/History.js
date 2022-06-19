@@ -2,13 +2,14 @@ import React from 'react';
 const History = ({ history, moveTo, currentMove }) => {
  
   return (
-    <ul>
+    <ul className='app1' >
       {history.map((_, move) => {
         return (
           <li key={move}>
             <button
               style={{
-                fontWeight: move === currentMove ? 'bold' : 'normal',
+                color: move === currentMove ? 'yellow' : 'red',
+                'padding-left': '120px'
               }}
               type="button"
               onClick={() => {
